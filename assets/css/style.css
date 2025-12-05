@@ -511,7 +511,7 @@ body {
     padding-bottom: 0;
 }
 
-.video-player-area {}
+
 
 .video-player-wrapper {
     margin-top: -180px;
@@ -530,8 +530,9 @@ body {
     border: none;
     background: none;
     position: absolute;
-    top: 45%;
-    left: 48%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 
@@ -613,8 +614,6 @@ body {
         border: none;
         background: none;
         position: absolute;
-        top: 45%;
-        left: 48%;
         cursor: pointer;
     }
 
@@ -623,6 +622,7 @@ body {
         height: 25px;
     }
 }
+
 
 /* Service CSS */
 .service-area-start {
@@ -705,7 +705,7 @@ body {
     margin-bottom: 30px;
 }
 
-.service-item ul {}
+
 
 .service-item ul li {
     list-style: none;
@@ -1486,6 +1486,7 @@ body.no-scroll {
     position: relative;
     overflow: hidden;
     animation: pulse 2s infinite alternate;
+    padding: 10px;
 }
 
 .logo-icon:before {
@@ -1718,13 +1719,13 @@ body.no-scroll {
 
 /* lezy loading area start */
 /* Lazy Loading Gray Animation Effect */
-img.img-fluid, 
+img.img-fluid,
 img[loading="lazy"] {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-img.img-fluid.loaded, 
+img.img-fluid.loaded,
 img[loading="lazy"].loaded {
     opacity: 1;
 }
@@ -1776,6 +1777,7 @@ img[loading="lazy"].loaded {
     0% {
         background-position: 200% 0;
     }
+
     100% {
         background-position: -200% 0;
     }
@@ -1798,10 +1800,10 @@ img[loading="lazy"].loaded {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        rgba(255, 255, 255, 0.2) 50%, 
-        transparent 100%);
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            transparent 100%);
     animation: shimmer 1.5s infinite;
     z-index: 1;
 }
@@ -1810,6 +1812,7 @@ img[loading="lazy"].loaded {
     0% {
         left: -100%;
     }
+
     100% {
         left: 100%;
     }
@@ -1835,4 +1838,5 @@ img[loading="lazy"].loaded {
     opacity: 0;
     visibility: hidden;
 }
+
 /* lezy loading area end */
