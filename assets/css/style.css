@@ -1,0 +1,735 @@
+:root {
+    --bg-dark: #0b0f17;
+    --accent: #09c5ff;
+    --accent-2: #6b2cff;
+    --muted: #7b8794;
+    --card: #ffffff;
+    --text-color: #E9ECF6;
+    --container: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.bg-area {
+    background: url('../images/hero-bg.png') no-repeat center center/cover;
+    padding: 30px 0 100px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* ensure absolutely positioned nav-menu is placed relative to header */
+}
+
+/* ensure header children ordering so toggle can sit right when shown */
+.header-wrapper > .logo {
+    order: 1;
+}
+
+.header-wrapper > .nav-menu {
+    order: 2;
+}
+
+.header-wrapper > .header-btn {
+    order: 3;
+}
+
+.header-wrapper > .nav-toggle {
+    order: 4;
+}
+
+/* Nav base styles */
+.nav-menu {
+    position: relative;
+}
+
+.nav-menu .menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu .menu-list .nav-item {
+    position: relative;
+}
+
+.nav-menu .menu-list .nav-item .nav-link {
+    display: block;
+    text-decoration: none;
+    color: var(--card);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.header-btn .get-started-btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #03344D;
+    background: #fff;
+    padding: 14px 25px;
+    border-radius: 8px;
+}
+
+.header-btn .get-started-btn:hover {
+    background-image: linear-gradient(90deg, #00C8F5 0%, #DB4E35 100%);
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Dropdown submenu styles */
+.nav-menu .menu-list .nav-item .dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: var(--card);
+    color: var(--bg-dark);
+    box-shadow: 0 6px 18px rgba(2, 8, 23, 0.12);
+    border-radius: 8px;
+    min-width: 180px;
+    padding: 6px 0;
+    list-style: none;
+    z-index: 50;
+}
+
+.nav-menu .menu-list .nav-item .dropdown.show {
+    display: block;
+}
+
+.nav-menu .menu-list .nav-item .dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--bg-dark);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-menu .menu-list .nav-item .dropdown li a:hover {
+    background: #f5f7fa;
+}
+
+/* Small screens: make dropdowns full width under the nav */
+@media (max-width: 768px) {
+    .nav-menu .menu-list {
+        flex-direction: column;
+    }
+
+    .nav-menu .menu-list .nav-item .dropdown {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        padding-left: 12px;
+    }
+}
+
+/* Mobile nav toggle button */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    /* keep a consistent hit area */
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    position: absolute;
+    /* positioned in header */
+    z-index: 1200;
+    /* ensure the toggle is clickable above other content */
+}
+
+.nav-toggle .bar {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 2px;
+    margin: 0 auto;
+    background: var(--card);
+    transition: background 160ms ease;
+}
+
+.nav-toggle .bar::before,
+.nav-toggle .bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background: var(--card);
+    transition: transform 220ms ease, top 220ms ease, opacity 160ms ease;
+}
+
+.nav-toggle .bar::before {
+    top: -9px;
+}
+
+.nav-toggle .bar::after {
+    top: 9px;
+}
+
+/* Transform into an X when open */
+.nav-toggle.open .bar {
+    background: transparent;
+}
+
+.nav-toggle.open .bar::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.nav-toggle.open .bar::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* Mobile layout */
+@media (max-width: 992px) {
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .header-wrapper {
+        gap: 12px;
+    }
+
+    /* OFF-CANVAS: make the nav a fixed left-side panel on mobile */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 320px;
+        max-width: 92%;
+        background: var(--bg-dark);
+        padding: 20px 18px;
+        transform: translateX(-110%);
+        transition: transform 300ms cubic-bezier(.2, .9, .2, 1);
+        z-index: 1100;
+        overflow-y: auto;
+        box-shadow: 12px 0 30px rgba(2, 8, 23, 0.5);
+    }
+
+    .nav-menu.open {
+        transform: translateX(0);
+    }
+
+    /* position the hamburger on the right while panel slides from the left */
+    .nav-toggle {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+    }
+
+    .nav-menu .menu-list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-menu .menu-list .nav-item {
+        margin-bottom: 6px;
+    }
+
+    .nav-menu .menu-list .nav-item .nav-link {
+        padding: 10px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Dropdowns in mobile behave as nested lists */
+    .nav-menu .menu-list .nav-item .dropdown {
+        display: none;
+    }
+
+    .nav-menu .menu-list .nav-item .dropdown.show {
+        display: block;
+    }
+}
+
+/* Desktop: hide the duplicate mobile CTA */
+.mobile-cta {
+    display: none;
+}
+
+/* Mobile-specific CTA and header adjustments */
+@media (max-width: 992px) {
+
+    /* hide the header CTA in the top bar on mobile */
+    .header-btn {
+        display: none;
+    }
+
+    /* show CTA inside nav */
+    .mobile-cta {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .mobile-cta a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        color: #03344D;
+        background: #fff;
+        padding: 14px 25px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .mobile-cta a:hover {
+        background-image: linear-gradient(90deg, #00C8F5 0%, #DB4E35 100%);
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: none;
+        outline: none;
+    }
+
+    /* ensure toggle appears to the right in the flex layout */
+    .header-wrapper > .nav-toggle {
+        order: 4;
+        margin-left: 8px;
+    }
+
+    .header-wrapper > .nav-menu {
+        order: 2;
+    }
+}
+
+/* Force-hide hamburger on larger screens in case of conflicts */
+@media (min-width: 993px) {
+    .nav-toggle {
+        display: none !important;
+    }
+}
+
+/* overlay shown when off-canvas menu is open */
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease;
+    z-index: 1050;
+}
+
+.nav-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* prevent body scroll when off-canvas is open */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Screen-reader only helper */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0
+}
+
+/* Hero text gradient for the word wrapped in <span> ("Future") */
+.hero-text {
+    color: #fff;
+    font-weight: 700;
+}
+
+.hero-text span {
+    display: inline-block;
+    background: linear-gradient(90deg, #08C4EF 38%, #D1543E 63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Hero section css */
+.hero-section {}
+
+.hero-contain-area {
+    text-align: center;
+    padding: 140px 0px 100px 0px;
+}
+
+.hero-contain-area .hero-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 120%;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.hero-contain-area .hero-slogan {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.hero-contain-area .hero-btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contain-area .hero-btn-area .hero-btn {
+    border: none;
+    border: 1px solid #FFFFFF;
+    color: var(--text-color);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    display: block;
+    padding: 14px 25px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.hero-contain-area .hero-btn-area .hero-btn:hover {
+    border: 1px solid transparent;
+    background-image: linear-gradient(90deg, #00C8F5 0%, #DB4E35 100%);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: none;
+    outline: none;
+}
+
+.trusted-by {
+    padding-top: 120px;
+}
+
+.trusted-by .trusted-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands .brand-logo {
+    margin: 0 25px;
+}
+
+@media all and (max-width:480px) {
+    .hero-contain-area .hero-text {
+        font-size: 38px;
+    }
+
+    .hero-contain-area .hero-btn-area .hero-btn {
+        padding: 14px 15px;
+        margin: 10px;
+    }
+}
+
+/* Video Play Area */
+.second-bg-area {
+    background: url('../images/effect-bg.png') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+.video-player-area {}
+
+.video-player-wrapper {
+    margin-top: -180px;
+}
+
+.video-thumbnail {
+    position: relative;
+}
+
+.video-thumbnail-bg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-thumbnail .play-button {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    cursor: pointer;
+}
+
+/* Video modal styles */
+.video-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2200;
+}
+
+.video-modal.open {
+    display: flex;
+}
+
+.video-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.video-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 960px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 18px;
+    box-sizing: border-box;
+    z-index: 2210;
+}
+
+.video-modal-close {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2220;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    /* 16:9 */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-modal-close:focus {
+    outline: 2px solid var(--accent);
+}
+
+@media all and (max-width:991px) {
+    .video-thumbnail-bg {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .video-thumbnail .play-button {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 45%;
+        left: 48%;
+        cursor: pointer;
+    }
+
+    .play-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Service CSS */
+.service-area-start {}
+
+.service-header-area {
+    text-align: center;
+    padding: 120px 0px 80px 0px;
+}
+
+.service-header-area .offer-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #1D3378;
+}
+
+.service-header-area .service-header-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 120%;
+    color: #1D3378;
+}
+
+.service-header-area .service-slogan {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #1D3378;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.service-item-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex-basis: 32%;
+    background-color: #fff;
+    padding: 51px 31px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.service-item .service-item-icon {
+    height: 55px;
+    width: 55px;
+    margin-bottom: 40px;
+}
+
+.service-item .service-item-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #2744A0;
+    margin-bottom: 20px;
+}
+
+.service-item .service-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #1D3378;
+    margin-bottom: 30px;
+}
+
+.service-item ul {}
+
+.service-item ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service-item ul li img {
+    margin-right: 5px;
+}
+
+.service-item ul li p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #1D3378;
+}
+
+@media all and (max-width:991px) {
+    .service-header-area .service-slogan {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .service-item {
+        flex-basis: 100%;
+    }
+}
