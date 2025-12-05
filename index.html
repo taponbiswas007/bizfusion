@@ -35,7 +35,7 @@
         <div class="logo-container">
             <div class="logo-icon">
                 <!-- <i class="fas fa-brain"></i>  -->
-                <img src="assets/images/logo.svg" alt="">
+                <img loading="lazy" class="img-fluid" src="assets/images/logo.svg" alt="">
             </div>
             <div class="rotating-ring"></div>
         </div>
@@ -531,89 +531,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const preloader = document.getElementById('preloader');
-            const progressBar = document.getElementById('progressBar');
-            const percentage = document.getElementById('percentage');
-            const mainContent = document.getElementById('mainContent');
-            const body = document.body;
-
-            let progress = 0;
-            const totalTime = 3000; // 3 seconds total loading time
-            const intervalTime = 30; // Update every 30ms
-            const increment = 100 / (totalTime / intervalTime);
-
-            // Simulate loading progress
-            const loadingInterval = setInterval(() => {
-                progress += increment;
-
-                // Ensure we don't go over 100%
-                if (progress > 100) {
-                    progress = 100;
-                }
-
-                // Update progress bar and percentage
-                progressBar.style.width = `${progress}%`;
-                percentage.textContent = `${Math.round(progress)}%`;
-
-                // When loading is complete
-                if (progress >= 100) {
-                    clearInterval(loadingInterval);
-
-                    // Wait a moment then hide preloader
-                    setTimeout(() => {
-                        preloader.classList.add('hidden');
-
-                        // Allow scrolling again
-                        body.classList.remove('no-scroll');
-
-                        // Show main content
-                        setTimeout(() => {
-                            mainContent.style.display = 'block';
-                        }, 300);
-                    }, 500);
-                }
-            }, intervalTime);
-
-            // Optional: Add a minimum display time for the preloader
-            setTimeout(() => {
-                if (progress < 90) {
-                    progress = 90;
-                    progressBar.style.width = `${progress}%`;
-                    percentage.textContent = `${Math.round(progress)}%`;
-                }
-            }, 2500);
-        });
-
-        // Prevent scrolling with keyboard when preloader is active
-        document.addEventListener('keydown', function (e) {
-            if (document.body.classList.contains('no-scroll')) {
-                // Prevent arrow keys, spacebar, page up/down from scrolling
-                if ([32, 33, 34, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-                    e.preventDefault();
-                }
-            }
-        }, false);
-
-        // Prevent scrolling with mouse wheel when preloader is active
-        document.addEventListener('wheel', function (e) {
-            if (document.body.classList.contains('no-scroll')) {
-                e.preventDefault();
-            }
-        }, {
-            passive: false
-        });
-
-        // Prevent touch scrolling on mobile when preloader is active
-        document.addEventListener('touchmove', function (e) {
-            if (document.body.classList.contains('no-scroll')) {
-                e.preventDefault();
-            }
-        }, {
-            passive: false
-        });
-    </script>
+  
 </body>
 
 </html>
