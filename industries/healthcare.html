@@ -24,6 +24,10 @@
     <!-- swipper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- ======Animation Libraries====== -->
+    <!-- Simple animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    
     <!-- ======Main Css====== -->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -56,12 +60,12 @@
         <div class="percentage" id="percentage">0%</div>
     </div>
     <!-- Start Header With Hero Section -->
-    <div class="bg-area indBg-area" id="mainContent">
+    <div class="bg-area indBg-area pb-0" id="mainContent">
         <header class="header">
             <div class="container">
                 <div class="header-wrapper">
                     <div class="logo">
-                        <a href="index.html"><img src="../assets/images/logo.svg" alt="Logo"></a>
+                        <a href="../index.html"><img src="../assets/images/logo.svg" alt="Logo"></a>
                     </div>
                     <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                         <span class="sr-only">Menu</span>
@@ -435,21 +439,21 @@
         <div class="hero-section ">
             <div class="container overflow-hidden">
                 <div class="row">
-                    <div class="hero-contain-area">
+                    <div class="hero-contain-area" style="padding: 90px 0px;">
                         <div class="row g-4 px-3 align-items-center">
                             <div class="col-lg-7">
-                                <h1 class="hero-text text-start fs-1">Transform Your Healthcare Practice</h1>
-                                <p class="hero-slogan fw-normal text-start">Our AI solutions enable healthcare providers
+                                <h1 class="hero-text text-start fs-1" data-aos="fade-up" data-aos-delay="100">Transform Your Healthcare Practice</h1>
+                                <p class="hero-slogan fw-normal text-start" data-aos="fade-up" data-aos-delay="200">Our AI solutions enable healthcare providers
                                     to automate appointment scheduling, rescheduling, and cancellations streamlining
                                     receptionist tasks to improve patient care, reduce operational costs, and boost
                                     efficiency. </p>
-                                <div class="hero-btn-area">
+                                <div class="hero-btn-area" data-aos="fade-up" data-aos-delay="300">
                                     <a href="#trial" class="hero-btn start_free_trail">Start Free Trial</a>
                                     <a href="#demo" class="hero-btn">Watch Demo</a>
                                 </div>
                             </div>
                             <div class="col-lg-5">
-                                <div class="hero-img w-100">
+                                <div class="hero-img w-100" data-aos="fade-left" data-aos-delay="400">
                                     <img class="img-fluid" src="../assets/images/industries/helth_hero.webp"
                                         alt="Hero Image">
                                 </div>
@@ -468,13 +472,13 @@
             <div class="container">
                 <div class="row">
                     <div class="service-header-area pt-0">
-                        <h4 class="offer-text">Our Solutions</h4>
-                        <h1 class="service-header-text">Healthcare <span style="color: #0994DC;">Solutions</span></h1>
-                        <p class="service-slogan">Discover how our AI-powered communication solutions can transform your
+                        <h4 class="offer-text" data-aos="fade-up">Our Solutions</h4>
+                        <h1 class="service-header-text" data-aos="fade-up" data-aos-delay="100">Healthcare <span style="color: #0994DC;">Solutions</span></h1>
+                        <p class="service-slogan" data-aos="fade-up" data-aos-delay="150">Discover how our AI-powered communication solutions can transform your
                             healthcare operations.</p>
                     </div>
                     <div class="service-item-area">
-                        <div class="service-item">
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="200">
                             <img class="service-item-icon" src="../assets/images/industries/healthicons.svg"
                                 alt="Service 1">
                             <h3 class="service-item-title">Patient Care Automation</h3>
@@ -495,7 +499,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="300">
                             <img class="service-item-icon" src="../assets/images/industries/voice.svg" alt="Service 1">
                             <h3 class="service-item-title">Voice AI Solutions</h3>
                             <p class="service-description">Enhance patient communication with intelligent voice
@@ -515,7 +519,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="400">
                             <img class="service-item-icon" src="../assets/images/industries/analytics.svg"
                                 alt="Service 1">
                             <h3 class="service-item-title">Administrative Efficiency</h3>
@@ -547,7 +551,7 @@
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-7">
-                        <div class="content_area me-0 pb-0">
+                        <div class="content_area me-0 pb-0" data-aos="fade-right" data-aos-delay="100">
                             <p class="mb-4 area_title">Why choose us</p>
                             <h1 class="mb-2 fs-2">Enhance Healthcare with AI</h1>
                             <h2>Our AI communication solutions help healthcare providers provide better service and
@@ -571,12 +575,12 @@
 
                             <!-- Schedule Demo -->
                             <div class="schedule_demo">
-                                <a href="#demo" class="demo_btn">Schedule a Demo</a>
+                                <a href="#demo" class="demo_btn" data-aos="fade-up" data-aos-delay="200">Schedule a Demo</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="why-choose-us-img w-100 d-flex justify-content-center align-items-center">
+                        <div class="why-choose-us-img w-100 d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-delay="150">
                             <img class="img-fluid" src="../assets/images/industries/whychoos.webp"
                                 alt="Why Choose Us Image">
                         </div>
@@ -591,12 +595,12 @@
         <div class="specialized-solutions-area py-5">
             <div class="container">
                 <div class="specialized-solutions-header-area">
-                    <h1 class="specialized-solutions-header-text">Ready to Transform Your <span
+                    <h1 class="specialized-solutions-header-text" data-aos="fade-up">Ready to Transform Your <span
                             style="color: #0994DC;">Healthcare</span> Practice? </h1>
-                    <p class="specialized-solutions-slogan">Join hundreds of healthcare providers who have already
+                    <p class="specialized-solutions-slogan" data-aos="fade-up" data-aos-delay="100">Join hundreds of healthcare providers who have already
                         revolutionized their practice with our AI solutions.</p>
                 </div>
-                <div class="d-flex justify-content-center mt-4 align-items-center">
+                <div class="d-flex justify-content-center mt-4 align-items-center" data-aos="fade-up" data-aos-delay="200">
                     <a href="#" class="getStart">Get Started</a>
                 </div>
 
@@ -610,11 +614,11 @@
         <div class="footer_area mt-2">
             <div class="container">
                 <div class="footer_wrapper">
-                    <div class="footer_logo">
+                    <div class="footer_logo" data-aos="fade-up">
                         <a href="index.html"><img src="../assets/images/logo.png" alt="Logo"></a>
                     </div>
                     <div class="footer_d_border"></div>
-                    <div class="quiclink">
+                    <div class="quiclink" data-aos="fade-up" data-aos-delay="100">
                         <ul>
                             <li>
                                 Quick Links
@@ -630,7 +634,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="quiclink">
+                    <div class="quiclink" data-aos="fade-up" data-aos-delay="200">
                         <ul>
                             <li>
                                 Contact
@@ -654,7 +658,7 @@
                         </ul>
                     </div>
 
-                    <div class="footer_social_links">
+                    <div class="footer_social_links" data-aos="fade-up" data-aos-delay="300">
                         <h1>Follow Us</h1>
                         <div class="footer_link_main_area">
                             <a href="#" aria-label="Instagram"><img src="../assets/images/instagram.svg"
@@ -683,9 +687,38 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- swipper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- ======Animation Library====== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="../assets/js/swiper.js"></script>
     <script src="../assets/js/main.js"></script>
+    
+    <!-- Simple Animation Initialization -->
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS with simple settings
+            AOS.init({
+                duration: 800, // Animation duration
+                once: true, // Animation happens only once
+                offset: 100, // Offset (in px) from the original trigger point
+                delay: 0, // Delay values will be applied on elements via data-aos-delay
+                easing: 'ease-in-out', // Default easing for AOS animations
+                disable: function() {
+                    // Disable animations on mobile devices (optional)
+                    return window.innerWidth < 768;
+                }
+            });
+            
+            // Refresh AOS after page loads (for dynamic content)
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    AOS.refresh();
+                }, 300);
+            });
+        });
+    </script>
 
 </body>
-
 </html>
