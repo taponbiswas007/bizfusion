@@ -197,6 +197,7 @@ body {
     background-size: cover;
     box-shadow: none;
     outline: none;
+    border: none;
 }
 
 /* Dropdown submenu styles */
@@ -2271,6 +2272,11 @@ img[loading="lazy"].loaded {
     background-size: cover;
     box-shadow: none;
     outline: none;
+}
+.heroImgborder{
+    border-radius: 15px;
+    padding: 15px;
+    background: linear-gradient(90deg, #00C8F5 0%, #DB4E35 100%);
 }
 
 /* ===========Industries area end=========== */
