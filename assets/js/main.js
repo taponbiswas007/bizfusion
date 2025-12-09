@@ -1,3 +1,15 @@
+// Sticky Header
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > 50) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   const navMenu = document.querySelector('.nav-menu');
   if (!navMenu) return;
@@ -394,4 +406,12 @@ document.addEventListener('DOMContentLoaded', function () {
   setTimeout(() => {
     initializePage();
   }, 3000); // Match this with your preloader duration
+});
+
+$(document).ready(function () {
+  $('.nav-link').click(function () {
+    $('.nav-link').removeClass('active');
+    $(this).addClass('active');
+  });
+
 });
