@@ -539,12 +539,12 @@ body {
 
 .dropdown-container {
     overflow: auto;
-    height: calc(100vh - 150px);
+    height: 480px;
 }
 
 .solutions-container {
     overflow: auto;
-    height: calc(100vh - 150px);
+    height: 500px;
 }
 
 @media (max-width: 992px) {
@@ -866,6 +866,7 @@ body {
     background-size: cover;
     box-shadow: none;
     outline: none;
+    border: none;
 }
 
 .trusted-by {
@@ -1155,7 +1156,7 @@ body {
     bottom: 0;
     right: 0;
     top: 90px;
-    width: 45%;
+    /* width: 45%; */
 }
 
 .bussiness_man img {
@@ -1294,7 +1295,7 @@ body {
         top: 42%;
         right: 0;
         bottom: 0;
-        width: 100%;
+        /* width: 100%; */
     }
 
 }
@@ -1417,6 +1418,12 @@ body {
 
 .specialized-solutions-item .card_content {
     padding: 16px 20px;
+    padding-bottom: 0;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .specialized-solutions-item .card_content h3 {
@@ -1527,6 +1534,10 @@ body {
 
 .swiper-slide {
     height: auto !important;
+    padding-bottom: 40px;
+}
+.specialized-solutions-item{
+    height: 100%;
 }
 
 .testimonials-item {
