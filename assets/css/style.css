@@ -52,6 +52,11 @@ body {
     background: url('../images/indHerobg.webp') no-repeat center center/cover;
     padding: 30px 0 100px 0;
 }
+.solutionsBg-area {
+    background: url('../images/solutions/solutions_hero_Bg.webp') no-repeat center center/cover;
+    padding: 30px 0 100px 0;
+    height: 616px;
+}
 
 .header-wrapper {
     display: flex;
@@ -1061,6 +1066,7 @@ body {
     color: #1D3378;
     width: 40%;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .service-item-area {
@@ -1348,7 +1354,7 @@ body {
     }
 
     .service-header-area .service-header-text {
-        font-size: 45px;
+        font-size: 35px;
     }
 }
 
@@ -2294,5 +2300,11 @@ img[loading="lazy"].loaded {
 }
 
 /* ===========Industries area end=========== */
+
+/* ===========solutions area start=========== */
+.solution_service_area{
+    margin-top: -490px;
+}
+/* ===========solutions area end=========== */
 
 
