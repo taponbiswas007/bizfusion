@@ -1144,11 +1144,17 @@ body {
         flex-basis: 100%;
     }
 }
+@media (max-width: 576px) {
+    .service-header-area .service-header-text{
+        font-size: 32px;
+    }
+}
 
 .why-choose-us-area {
     background: url('../images/why_choose_bg.webp') no-repeat center center/cover;
     padding: 105px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .indWhychoosebg {
