@@ -2289,6 +2289,9 @@ img[loading="lazy"].loaded {
     padding: 15px;
     background: linear-gradient(90deg, #00C8F5 0%, #DB4E35 100%);
 }
+.heroImgborder img{
+    border-radius: 10px;
+}
 
 /* ===========Industries area end=========== */
 
