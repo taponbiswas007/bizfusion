@@ -64,6 +64,12 @@ body {
     height: 616px;
 }
 
+.partner_hero {
+    background: url('../images/solutions/solutions_hero_Bg.webp') no-repeat center center/cover;
+    padding: 30px 0 100px 0;
+    height: 475px;
+}
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -352,7 +358,7 @@ body {
     /* position the hamburger on the right while panel slides from the left */
     .nav-toggle {
         position: absolute;
-        right: 18px;
+        right: 0;
         top: 18px;
     }
 
@@ -2442,6 +2448,17 @@ img[loading="lazy"].loaded {
     padding: 50px 40px;
 }
 
+.partnerlogo_wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 13px 0px #0000001A;
+    border-radius: 10px;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
 .input_feild {
     height: 45px;
     padding-top: 4px;
@@ -2568,3 +2585,125 @@ img[loading="lazy"].loaded {
 }
 
 /* ============contact us area end============ */
+
+/* ============partner area start=========== */
+
+.partnerlogo_area {
+    margin-top: -320px;
+    padding: 0 22%;
+}
+
+/* .partnerlogo_wrapper {
+    width: fit-content;
+} */
+
+.partner_with_us_area {
+    background: url(../images/partners/contact_bg.webp) no-repeat center center/cover;
+    padding: 100px 0;
+
+}
+
+.partner_with_us_title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.partner_with_us_area .get-started-btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #03344D;
+    background: #fff;
+    padding: 14px 25px;
+    border-radius: 8px;
+}
+
+.why_partner_with_us_area {
+    padding: 100px 0;
+}
+
+.why_partner_with_us_title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #1D3378;
+}
+
+.why_partner_choose_slogan {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #1D3378;
+    margin-top: 20px;
+    max-width: 432px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why_partner_card {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 13px 0px #0000001A;
+    border-radius: 14px;
+    padding: 40px 30px;
+    height: 100%;
+}
+
+.why_partner_card img {
+    margin-bottom: 20px;
+}
+
+.why_partner_card h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #1D3378;
+    margin-bottom: 10px;
+}
+
+.why_partner_card p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #1D3378;
+}
+
+@media (max-width:768px) {
+    .partner_with_us_title {
+        font-size: 30px;
+    }
+
+    .why_partner_with_us_title {
+        font-size: 35px;
+    }
+
+    .partnerlogo_area {
+        padding: 0 5px;
+    }
+
+    .partnerlogo_wrapper {
+        padding: 50px 10px;
+    }
+}
+
+/* ============partner area end=========== */
