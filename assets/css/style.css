@@ -2344,6 +2344,19 @@ img[loading="lazy"].loaded {
 .solution_service_area {
     margin-top: -490px;
 }
+.solution_icon_box{
+    font-size: 25px;
+    color: #ffffff;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(270deg, #DB4E35 0%, #00C8F5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
 
 /* ===========solutions area end=========== */
 
