@@ -52,10 +52,12 @@ body {
     background: url('../images/indHerobg.webp') no-repeat center center/cover;
     padding: 30px 0 100px 0;
 }
+
 .about_h_Bg {
     background: url('../images/about_us/about_hero_bg.webp') no-repeat center center/cover;
     padding: 30px 0 100px 0;
 }
+
 .solutionsBg-area {
     background: url('../images/solutions/solutions_hero_Bg.webp') no-repeat center center/cover;
     padding: 30px 0 100px 0;
@@ -521,9 +523,11 @@ body {
     transform: translateX(0);
     color: #00C8F5;
 }
-.solutions-dropdown{
+
+.solutions-dropdown {
     left: -174% !important;
 }
+
 /* Regular Dropdown (Get Started & Company) */
 .dropdown:not(.mega-dropdown):not(.solutions-dropdown) {
     min-width: 200px;
@@ -565,9 +569,10 @@ body {
         grid-template-columns: 1fr !important;
         width: 100% !important;
     }
-    .solutions-dropdown{
-    left: 0 !important;
-}
+
+    .solutions-dropdown {
+        left: 0 !important;
+    }
 }
 
 
@@ -1154,8 +1159,9 @@ body {
         flex-basis: 100%;
     }
 }
+
 @media (max-width: 576px) {
-    .service-header-area .service-header-text{
+    .service-header-area .service-header-text {
         font-size: 32px;
     }
 }
@@ -1515,6 +1521,7 @@ body {
     background: url(../images/testimonials.webp) no-repeat center center/cover;
 
 }
+
 .whyClientchoose {
     padding: 100px 0;
     border-radius: 20px;
@@ -1565,7 +1572,8 @@ body {
     height: auto !important;
     padding-bottom: 40px;
 }
-.specialized-solutions-item{
+
+.specialized-solutions-item {
     height: 100%;
 }
 
@@ -2313,21 +2321,24 @@ img[loading="lazy"].loaded {
     box-shadow: none;
     outline: none;
 }
-.heroImgborder{
+
+.heroImgborder {
     border-radius: 15px;
     padding: 15px;
     background: linear-gradient(90deg, #00C8F5 0%, #DB4E35 100%);
 }
-.heroImgborder img{
+
+.heroImgborder img {
     border-radius: 10px;
 }
 
 /* ===========Industries area end=========== */
 
 /* ===========solutions area start=========== */
-.solution_service_area{
+.solution_service_area {
     margin-top: -490px;
 }
+
 /* ===========solutions area end=========== */
 
 /* ==========about us area start========= */
@@ -2370,45 +2381,190 @@ img[loading="lazy"].loaded {
     line-height: 120%;
     color: #1D3378;
 }
-.about_cta_bg{
+
+.about_cta_bg {
     background: url('../images/about_us/bg_2.webp') no-repeat center center/cover;
     padding: 80px 0;
 }
-.cta-header-area .specialized-solutions-header-text{
+
+.cta-header-area .specialized-solutions-header-text {
     font-family: Poppins;
-font-weight: 700;
-font-style: Bold;
-font-size: 39px;
-line-height: 120%;
-letter-spacing: 0%;
-text-align: center;
-color: #FFFFFF;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
 
 }
-.cta-header-area .specialized-solutions-slogan{
+
+.cta-header-area .specialized-solutions-slogan {
     font-family: Poppins;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
-line-height: 120%;
-letter-spacing: 0%;
-text-align: center;
-color: #FFFFFF;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
 
 }
+
 @media (max-width:992px) {
-    .expert-team-area .service-header-text{
+    .expert-team-area .service-header-text {
         font-size: 42px;
     }
-    .cta-header-area .specialized-solutions-header-text{
+
+    .cta-header-area .specialized-solutions-header-text {
         font-size: 20px;
     }
 }
+
 @media (max-width:420px) {
-    .expert-team-area .service-header-text{
+    .expert-team-area .service-header-text {
         font-size: 31px;
     }
 }
+
 /* ==========about us area end========= */
 
+/* ============contact us area start============ */
+.contact_us_area {
+    margin-top: -490px;
+}
 
+.contact_form_wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 13px 0px #0000001A;
+
+    border-radius: 10px;
+    padding: 50px 40px;
+}
+
+.input_feild {
+    height: 45px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    border-radius: 4px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #49454F;
+    border: 1px solid #79747E;
+
+}
+
+.input_feild label {
+    left: 10px;
+    top: -10px;
+    background: #FFFFFF;
+    padding: 0 4px;
+
+}
+
+.input_feild input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+
+}
+
+.input_feild textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 4px 0;
+    resize: none;
+
+}
+
+.contact_card {
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 2px 13px 0px #0000001A;
+    height: 100%;
+
+}
+
+.contact_card_icon {
+    width: 56px;
+    height: 42px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contact_card_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact_card h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #1D3378;
+    margin-bottom: 5px;
+    margin-top: 20px;
+
+}
+
+.contact_card ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.contact_card ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    column-gap: 10px;
+}
+
+.contact_card ul li:first-child {
+    align-items: flex-start;
+}
+
+.contact_card ul li img {
+    height: 24px;
+    width: 24px;
+}
+
+.contact_card p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #1D3378;
+
+}
+
+@media (max-width: 992px) {
+    .service-header-area .service-header-text {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact_form_wrapper {
+        padding: 20px 20px;
+    }
+}
+
+/* ============contact us area end============ */
