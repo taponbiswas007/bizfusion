@@ -474,6 +474,7 @@ body {
     border-radius: 8px;
     flex-shrink: 0;
     transition: all 0.3s ease;
+    display: none !important;
 }
 
 .dropdown-link:hover .solution-icon {
