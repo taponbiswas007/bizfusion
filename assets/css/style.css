@@ -52,6 +52,10 @@ body {
     background: url('../images/indHerobg.webp') no-repeat center center/cover;
     padding: 30px 0 100px 0;
 }
+.about_h_Bg {
+    background: url('../images/about_us/about_hero_bg.webp') no-repeat center center/cover;
+    padding: 30px 0 100px 0;
+}
 .solutionsBg-area {
     background: url('../images/solutions/solutions_hero_Bg.webp') no-repeat center center/cover;
     padding: 30px 0 100px 0;
@@ -479,7 +483,7 @@ body {
 .dropdown-title {
     display: block;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     color: #111827;
     margin-bottom: 4px;
     transition: color 0.3s ease;
@@ -517,7 +521,9 @@ body {
     transform: translateX(0);
     color: #00C8F5;
 }
-
+.solutions-dropdown{
+    left: -174% !important;
+}
 /* Regular Dropdown (Get Started & Company) */
 .dropdown:not(.mega-dropdown):not(.solutions-dropdown) {
     min-width: 200px;
@@ -559,14 +565,17 @@ body {
         grid-template-columns: 1fr !important;
         width: 100% !important;
     }
+    .solutions-dropdown{
+    left: 0 !important;
+}
 }
 
 
 .solutions-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    width: 661px;
+    width: 880px;
     margin: 0 auto;
 }
 
@@ -602,15 +611,15 @@ body {
 
 /* Solution Icon */
 .solution-icon {
-    font-size: 18px;
+    font-size: 15px;
     color: #00C8F5;
     background: rgba(0, 200, 245, 0.1);
-    width: 36px;
-    height: 36px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 5px;
     flex-shrink: 0;
     transition: all 0.3s ease;
 }
@@ -692,7 +701,7 @@ body {
 
 @media (min-width: 1225px) {
     .solutions-container {
-        width: 776px;
+        width: 890px;
     }
 }
 
@@ -1134,6 +1143,7 @@ body {
     color: #1D3378;
 }
 
+
 @media all and (max-width:991px) {
     .service-header-area .service-slogan {
         width: 100%;
@@ -1503,6 +1513,13 @@ body {
     border-radius: 20px;
     overflow: hidden;
     background: url(../images/testimonials.webp) no-repeat center center/cover;
+
+}
+.whyClientchoose {
+    padding: 100px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: url(../images/about_us/bg_1.webp) no-repeat center center/cover;
 
 }
 
@@ -2312,5 +2329,86 @@ img[loading="lazy"].loaded {
     margin-top: -490px;
 }
 /* ===========solutions area end=========== */
+
+/* ==========about us area start========= */
+.expert-team-area .service-header-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 120%;
+    color: #1D3378;
+}
+
+.expert-team-area .service-slogan {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #1D3378;
+    margin: 0 auto;
+}
+
+.expert-team-area ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.expert-team-area ul li img {
+    margin-right: 5px;
+}
+
+.expert-team-area ul li p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #1D3378;
+}
+.about_cta_bg{
+    background: url('../images/about_us/bg_2.webp') no-repeat center center/cover;
+    padding: 80px 0;
+}
+.cta-header-area .specialized-solutions-header-text{
+    font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 39px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+color: #FFFFFF;
+
+}
+.cta-header-area .specialized-solutions-slogan{
+    font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+color: #FFFFFF;
+
+}
+@media (max-width:992px) {
+    .expert-team-area .service-header-text{
+        font-size: 42px;
+    }
+    .cta-header-area .specialized-solutions-header-text{
+        font-size: 20px;
+    }
+}
+@media (max-width:420px) {
+    .expert-team-area .service-header-text{
+        font-size: 31px;
+    }
+}
+/* ==========about us area end========= */
 
 
