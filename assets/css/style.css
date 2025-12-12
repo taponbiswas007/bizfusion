@@ -459,6 +459,7 @@ body {
 .solution-column .dropdown-link {
     align-items: center;
     gap: 15px;
+    margin-bottom: 0 !important;
 }
 
 /* Solution Icon */
@@ -594,7 +595,7 @@ body {
 .solution-column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 3px;
 }
 
 .dropdown-heading {
