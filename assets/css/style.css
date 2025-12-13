@@ -2346,7 +2346,8 @@ img[loading="lazy"].loaded {
 .solution_service_area {
     margin-top: -490px;
 }
-.solution_icon_box{
+
+.solution_icon_box {
     font-size: 25px;
     color: #ffffff;
     width: 56px;
@@ -2724,7 +2725,7 @@ img[loading="lazy"].loaded {
 /* ============partner area end=========== */
 
 /* =========team area start========== */
-.teammemberCardWrapper{
+.teammemberCardWrapper {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -2732,74 +2733,234 @@ img[loading="lazy"].loaded {
     gap: 30px;
     margin-top: 50px;
 }
-.teammemberCard{
+
+.teammemberCard {
     flex-basis: calc(25% - 30px);
 }
-.teammemberCard .membar_image_box{
+
+.teammemberCard .membar_image_box {
     width: 100%;
     height: 312px;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 15px;
 }
-.teammemberCardWrapper .teammemberCard:nth-child(even) .membar_image_box{
+
+.teammemberCardWrapper .teammemberCard:nth-child(even) .membar_image_box {
     height: 378px;
 }
-.teammemberCard .membar_image_box img{
+
+.teammemberCard .membar_image_box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.teammemberCard .memberName{
-    font-family: Poppins;
-font-weight: 400;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #2744A0;
-margin-bottom: 0;
-}
-.teammemberCard .memberRole{
-    font-family: Poppins;
-font-weight: 400;
-font-style: Regular;
-font-size: 13px;
 
-line-height: 130%;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #0994DC;
-}
-.teammemberCard .memberDetails{
+.teammemberCard .memberName {
     font-family: Poppins;
-font-weight: 500;
-font-size: 13px;
-
-line-height: 130%;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #1D3378;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #2744A0;
+    margin-bottom: 0;
 }
-.teammemberCard .memberDetails a{
+
+.teammemberCard .memberRole {
     font-family: Poppins;
-font-weight: 700;
-font-style: Bold;
-font-size: 13px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
 
-line-height: 130%;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #1D3378;
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #0994DC;
 }
-@media (max-width:992px){
-    .teammemberCard{
+
+.teammemberCard .memberDetails {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 13px;
+
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #1D3378;
+}
+
+.teammemberCard .memberDetails a {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 13px;
+
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #1D3378;
+}
+
+@media (max-width:992px) {
+    .teammemberCard {
         flex-basis: calc(50% - 30px);
     }
 }
-@media (max-width:576px){
-    .teammemberCard{
+
+@media (max-width:576px) {
+    .teammemberCard {
         flex-basis: 100%;
     }
 }
+
 /* =========team area end========== */
+
+/* ==========careers area start======== */
+.whatwelookinglist {
+    padding: 0;
+    margin: 0;
+}
+
+.whatweBg {
+    background: url('../images/whatweBg.webp') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.whatwelookinglist li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    column-gap: 10px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--text-color);
+}
+
+.whatwelookinglist li span {
+    display: block;
+}
+
+.jointeambutton:hover {
+    color: #03344D !important;
+}
+
+.open-position-title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 61px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #1D3378;
+}
+
+.open-position-title span {
+    color: #0994DC;
+}
+
+.open-position-description {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #1D3378;
+    max-width: 432px;
+    margin: 0 auto;
+}
+
+.positonCard {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 13px 0px #0000001A;
+    border-radius: 14px;
+    padding: 30px 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.positonCard .logo_box {
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+}
+
+.card-title-content .position-card-title {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #191F33;
+}
+
+.card-title-content .position-card-title span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #03344D;
+    background: #E6F4FC;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.position-card-location {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #767F8C;
+
+}
+
+.card-title-content img {
+    width: 18px;
+    height: 18px;
+
+}
+
+.position-card-button .applyNowBtn {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #0A65CC;
+    padding: 12px 18px;
+    background: #E6F4FC;
+    border-radius: 6px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width:992px) {
+    .open-position-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:370px) {
+    .positionCard_header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ==========careers area end======== */
