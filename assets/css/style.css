@@ -2722,3 +2722,84 @@ img[loading="lazy"].loaded {
 }
 
 /* ============partner area end=========== */
+
+/* =========team area start========== */
+.teammemberCardWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+.teammemberCard{
+    flex-basis: calc(25% - 30px);
+}
+.teammemberCard .membar_image_box{
+    width: 100%;
+    height: 312px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.teammemberCardWrapper .teammemberCard:nth-child(even) .membar_image_box{
+    height: 378px;
+}
+.teammemberCard .membar_image_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teammemberCard .memberName{
+    font-family: Poppins;
+font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #2744A0;
+margin-bottom: 0;
+}
+.teammemberCard .memberRole{
+    font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 13px;
+
+line-height: 130%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #0994DC;
+}
+.teammemberCard .memberDetails{
+    font-family: Poppins;
+font-weight: 500;
+font-size: 13px;
+
+line-height: 130%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #1D3378;
+}
+.teammemberCard .memberDetails a{
+    font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 13px;
+
+line-height: 130%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #1D3378;
+}
+@media (max-width:992px){
+    .teammemberCard{
+        flex-basis: calc(50% - 30px);
+    }
+}
+@media (max-width:576px){
+    .teammemberCard{
+        flex-basis: 100%;
+    }
+}
+/* =========team area end========== */
