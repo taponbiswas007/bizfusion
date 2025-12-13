@@ -227,7 +227,7 @@ body {
     color: var(--bg-dark);
     box-shadow: 0 6px 18px rgba(2, 8, 23, 0.12);
     border-radius: 8px;
-    min-width: 180px;
+    min-width: 220px;
     padding: 10px 0;
     list-style: none;
     z-index: 50;
