@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizfusion</title>
+    <!-- ======Favicon Icon====== -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!-- ======Google Fonts====== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ======Font Bootstrap CSS====== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- =====font awesome====== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swipper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ======Animation Libraries====== -->
+    <!-- Simple animation library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- ======Main Css====== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="no-scroll">
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img loading="lazy" class="img-fluid" src="../assets/images/logo.svg" alt="">
+            </div>
+            <div class="rotating-ring"></div>
+        </div>
+
+        <h1 class="company-name">bizfusion.<span class="ai">ai</span></h1>
+
+        <div class="loading-text">Intelligent solutions loading...</div>
+
+        <div class="loading-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="percentage" id="percentage">0%</div>
+    </div>
+    <!-- Start Header With Hero Section -->
+    <div class="bg-area solutionsBg-area pb-0 " id="mainContent">
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../assets/images/logo.svg" alt="Logo"></a>
+                    </div>
+                    <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                        <span class="sr-only">Menu</span>
+                        <span class="bar"></span>
+                    </button>
+                    <nav class="nav-menu">
+                        <ul id="primary-navigation" class="menu-list">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#Industries">
+                                    <span>Industries</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown mega-dropdown" aria-label="Industries submenu">
+                                    <div class="dropdown-container">
+                                        <div class="industry-item">
+                                            <a href="../industries/healthcare.html" class="dropdown-link">
+                                                <span class="dropdown-title">Healthcare</span>
+                                                <span class="dropdown-desc">
+                                                    Automate appointment scheduling, patient intake, and follow-ups
+                                                    operations and improve care delivery.
+                                                </span>
+
+                                            </a>
+                                            <a href="../industries/hospitality.html" class="dropdown-link">
+                                                <span class="dropdown-title">Hospitality</span>
+                                                <span class="dropdown-desc">Enhance guest experiences with smart
+                                                    concierge, contactless check-in, and multilingual service automation
+                                                    for hotels and resorts.
+                                                </span>
+                                            </a>
+                                            <a href="../industries/retail.html" class="dropdown-link">
+                                                <span class="dropdown-title">Retail</span>
+                                                <span class="dropdown-desc">Enable 24x7 voice-based customer service,
+                                                    order tracking, and in-store assistant bots to boost engagement and
+                                                    sales conversion.</span>
+                                            </a>
+                                        </div>
+                                        <div class="industry-item">
+                                            <a href="../industries/education.html" class="dropdown-link">
+                                                <span class="dropdown-title">Education</span>
+                                                <span class="dropdown-desc">
+                                                    Support admissions, class scheduling, fee inquiries, student
+                                                    helpdesks through conversational automation.
+
+                                                </span>
+
+                                            </a>
+                                            <a href="../industries/automotive.html" class="dropdown-link">
+                                                <span class="dropdown-title">Automotive</span>
+                                                <span class="dropdown-desc">Simplify service bookings, test-drive
+                                                    scheduling and vehicle diagnostics for dealerships and aftermarket
+                                                    services.
+
+                                                </span>
+
+                                            </a>
+                                            <a href="../industries/banking.html" class="dropdown-link">
+                                                <span class="dropdown-title">Banking</span>
+                                                <span class="dropdown-desc">Deliver secure, real-time voice assistance
+                                                    for balance checks, fraud alerts, and account services with
+                                                    compliance-ready solutions.</span>
+
+                                            </a>
+                                        </div>
+                                        <div class="industry-item">
+                                            <a href="../industries/travel.html" class="dropdown-link">
+                                                <span class="dropdown-title">Travel</span>
+                                                <span class="dropdown-desc">
+                                                    Automate bookings, cancellations, and itinerary updates while
+                                                    providing multilingual support for travelers.
+
+                                                </span>
+
+                                            </a>
+                                            <a href="../industries/logistics.html" class="dropdown-link">
+                                                <span class="dropdown-title">Logistics</span>
+                                                <span class="dropdown-desc">Streamline shipment tracking, delivery
+                                                    updates, driver coordination with voice-enabled automation.
+
+                                                </span>
+
+                                            </a>
+                                            <a href="../industries/government.html" class="dropdown-link">
+                                                <span class="dropdown-title">Government</span>
+                                                <span class="dropdown-desc">Provide citizens with instant access to
+                                                    services, document status, and grievance redressal through
+                                                    multilingual voice bots.</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#Solutions">
+                                    <span>Solutions</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown solutions-dropdown" aria-label="Solutions submenu">
+                                    <div class="solutions-container">
+                                        <!-- Voice AI Section -->
+                                        <div class="solution-column">
+                                            <h4 class="dropdown-heading">Voice AI</h4>
+                                            <a href="appointmentManagement.html" class="dropdown-link">
+                                                <i class="fa-solid fa-calendar-check solution-icon"></i>
+                                                <span class="dropdown-title">Appointment Management</span>
+                                            </a>
+                                            <a href="smartCallRouting.html" class="dropdown-link">
+                                                <i class="fa-solid fa-route solution-icon"></i>
+                                                <span class="dropdown-title">Smart Call Routing</span>
+                                            </a>
+                                            <a href="outboundCalls.html" class="dropdown-link">
+                                                <i class="fa-solid fa-phone solution-icon"></i>
+                                                <span class="dropdown-title">Outbound Calls</span>
+                                            </a>
+                                            <a href="automatedVoiceReminders.html" class="dropdown-link">
+                                                <i class="fa-solid fa-bell solution-icon"></i>
+                                                <span class="dropdown-title">Automated Voice Reminders</span>
+                                            </a>
+                                            <a href="billingPaymentsCall.html" class="dropdown-link">
+                                                <i class="fa-solid fa-credit-card solution-icon"></i>
+                                                <span class="dropdown-title">Billing & Payments (Call)</span>
+                                            </a>
+                                            <a href="userQueryHandling.html" class="dropdown-link">
+                                                <i class="fa-solid fa-comments solution-icon"></i>
+                                                <span class="dropdown-title">User Query Handling</span>
+                                            </a>
+                                            <a href="multilingualVoice.html" class="dropdown-link">
+                                                <i class="fa-solid fa-language solution-icon"></i>
+                                                <span class="dropdown-title">Multilingual Voice</span>
+                                            </a>
+                                            <a href="callRecording.html" class="dropdown-link">
+                                                <i class="fa-solid fa-record-vinyl solution-icon"></i>
+                                                <span class="dropdown-title">Call Recording</span>
+                                            </a>
+                                            <a href="sentimentAnalysis.html" class="dropdown-link">
+                                                <i class="fa-solid fa-face-smile solution-icon"></i>
+                                                <span class="dropdown-title">Sentiment Analysis</span>
+                                            </a>
+                                        </div>
+
+                                        <!-- Chat & Messaging AI Section -->
+                                        <div class="solution-column">
+                                            <h4 class="dropdown-heading">Chat & Messaging AI</h4>
+                                            <a href="appointmentViaChat.html" class="dropdown-link">
+                                                <i class="fa-solid fa-calendar-days solution-icon"></i>
+                                                <span class="dropdown-title">Appointment via Chat</span>
+                                            </a>
+                                            <a href="automatedSMSWhatsApp.html" class="dropdown-link">
+                                                <i class="fa-solid fa-message solution-icon"></i>
+                                                <span class="dropdown-title">Automated SMS / WhatsApp</span>
+                                            </a>
+                                            <a href="aiChatbotQueries.html" class="dropdown-link">
+                                                <i class="fa-solid fa-robot solution-icon"></i>
+                                                <span class="dropdown-title">AI Chatbot for Queries</span>
+                                            </a>
+                                            <a href="documentUpload.html" class="dropdown-link">
+                                                <i class="fa-solid fa-file-arrow-up solution-icon"></i>
+                                                <span class="dropdown-title">Document Upload</span>
+                                            </a>
+                                            <a href="textSurveys.html" class="dropdown-link">
+                                                <i class="fa-solid fa-clipboard-check solution-icon"></i>
+                                                <span class="dropdown-title">Text Surveys</span>
+                                            </a>
+                                            <a href="conversationHistory.html" class="dropdown-link">
+                                                <i class="fa-solid fa-history solution-icon"></i>
+                                                <span class="dropdown-title">Conversation History</span>
+                                            </a>
+                                            <a href="secureChatEncryption.html" class="dropdown-link">
+                                                <i class="fa-solid fa-lock solution-icon"></i>
+                                                <span class="dropdown-title">Secure Chat Encryption</span>
+                                            </a>
+                                            <a href="sentimentAwareResponses.html" class="dropdown-link">
+                                                <i class="fa-solid fa-heart solution-icon"></i>
+                                                <span class="dropdown-title">Sentiment-aware Responses</span>
+                                            </a>
+                                        </div>
+
+                                        <!-- Platform Admin Section -->
+                                        <div class="solution-column">
+                                            <h4 class="dropdown-heading">Platform Admin</h4>
+                                            <a href="userRoleManagement.html" class="dropdown-link">
+                                                <i class="fa-solid fa-users-gear solution-icon"></i>
+                                                <span class="dropdown-title">User & Role Management</span>
+                                            </a>
+                                            <a href="businessTypeConfiguration.html" class="dropdown-link">
+                                                <i class="fa-solid fa-sliders solution-icon"></i>
+                                                <span class="dropdown-title">Business Type Configuration</span>
+                                            </a>
+                                            <a href="aiBehaviorTuning.html" class="dropdown-link">
+                                                <i class="fa-solid fa-sliders solution-icon"></i>
+                                                <span class="dropdown-title">AI Behavior Tuning</span>
+                                            </a>
+                                            <a href="channelManagement.html" class="dropdown-link">
+                                                <i class="fa-solid fa-tower-cell solution-icon"></i>
+                                                <span class="dropdown-title">Channel Management</span>
+                                            </a>
+                                            <a href="appIntegrations.html" class="dropdown-link">
+                                                <i class="fa-solid fa-plug solution-icon"></i>
+                                                <span class="dropdown-title">App Integrations</span>
+                                            </a>
+                                            <a href="billingSubscription.html" class="dropdown-link">
+                                                <i class="fa-solid fa-receipt solution-icon"></i>
+                                                <span class="dropdown-title">Billing & Subscription</span>
+                                            </a>
+                                            <a href="campaignScheduling.html" class="dropdown-link">
+                                                <i class="fa-solid fa-calendar solution-icon"></i>
+                                                <span class="dropdown-title">Campaign Scheduling</span>
+                                            </a>
+                                        </div>
+
+                                        <!-- Analytics & Monitoring Section -->
+                                        <div class="solution-column">
+                                            <h4 class="dropdown-heading">Analytics & Monitoring</h4>
+                                            <a href="realtimeDashboard.html" class="dropdown-link">
+                                                <i class="fa-solid fa-gauge-high solution-icon"></i>
+                                                <span class="dropdown-title">Real-Time Dashboard</span>
+                                            </a>
+                                            <a href="sentimentConversationInsights.html" class="dropdown-link">
+                                                <i class="fa-solid fa-chart-simple solution-icon"></i>
+                                                <span class="dropdown-title">Sentiment & Conversation Insights</span>
+                                            </a>
+                                            <a href="slaPerformanceTracking.html" class="dropdown-link">
+                                                <i class="fa-solid fa-clock solution-icon"></i>
+                                                <span class="dropdown-title">SLA & Performance Tracking</span>
+                                            </a>
+                                            <a href="aiTraining.html" class="dropdown-link">
+                                                <i class="fa-solid fa-brain solution-icon"></i>
+                                                <span class="dropdown-title">AI Training</span>
+                                            </a>
+                                            <a href="escalationRulesSetup.html" class="dropdown-link">
+                                                <i class="fa-solid fa-person-circle-exclamation solution-icon"></i>
+                                                <span class="dropdown-title">Escalation Rules Setup</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#GetStarted">
+                                    <span>Get Started</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown" aria-label="Get Started submenu">
+                                    <li><a href="#pricing">Pricing</a></li>
+                                    <li><a href="#moneybackguarantee">Money back guarantee</a></li>
+                                    <li><a href="#roi">ROI</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Company">
+                                    <span>Company</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown" aria-label="Company submenu">
+                                    <li><a href="../about-us.html">About Us</a></li>
+                                    <li><a href="../contact-us.html">Contact Us</a></li>
+                                    <li><a href="../careers.html">Careers</a></li>
+                                    <li><a href="../partners.html">Partners</a></li>
+                                    <li><a href="../our-team.html">Our Team</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- mobile CTA shown only on small screens -->
+                        <div class="mobile-cta">
+                            <a href="../contact-us.html" class="get-started-btn btn primary-btn">Get Started</a>
+                        </div>
+                    </nav>
+                    <div class="header-btn">
+                        <a href="../contact-us.html" class="get-started-btn btn primary-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="nav-overlay" class="nav-overlay"></div>
+
+    </div>
+
+    <!--Service Area  -->
+   <div class="service-area-start solution_service_area py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Coming Soon Section -->
+            <div class="coming-soon-section text-center" style="min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <!-- Icon -->
+                <div class="coming-soon-icon mb-4" data-aos="fade-up">
+                    <div class="solution_icon_box" style="width: 120px; height: 120px; margin: 0 auto; background: rgba(9, 148, 220, 0.1); border: 2px solid #0994DC;">
+                        <i class="fa-solid fa-hourglass-half" style="font-size: 3rem; color: #0994DC;"></i>
+                    </div>
+                </div>
+                
+                <!-- Main Message -->
+                <h4 class="offer-text text-white mb-3" data-aos="fade-up" data-aos-delay="50">Admin Portal</h4>
+                
+                <!-- Coming Soon Badge -->
+                <div class="coming-soon-badge mb-4" data-aos="fade-up" data-aos-delay="150">
+                    <span style="background: #0994DC; color: white; padding: 12px 30px; border-radius: 50px; font-size: 1.2rem; font-weight: 600; letter-spacing: 2px;">
+                        COMING SOON
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <!--End Service Area  -->
+    <!-- End Header With Hero Section -->
+    <div class="second-bg-area  pt-0">
+
+
+
+        <!-- let's connect start -->
+        <div class="specialized-solutions-area py-5">
+            <div class="container">
+                <div class="specialized-solutions-header-area">
+                    <h1 class="specialized-solutions-header-text mx-auto" style="max-width: 900px;" data-aos="fade-up">
+                        Transform your Business with <span style="color: #0994DC;">AI Solutions!</span></h1>
+                </div>
+                <div class="d-flex justify-content-center mt-4 align-items-center" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <a href="#" class="getStart">Get Started</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- let's connect end -->
+
+
+        <!-- footer start -->
+        <div class="footer_area mt-2">
+            <div class="container">
+                <div class="footer_wrapper">
+                    <div class="footer_logo" data-aos="fade-up">
+                        <a href="index.html"><img src="../assets/images/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="footer_d_border"></div>
+                    <div class="quiclink" data-aos="fade-up" data-aos-delay="100">
+                        <ul>
+                            <li>
+                                Quick Links
+                            </li>
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="../about-us.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="../contact-us.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="quiclink" data-aos="fade-up" data-aos-delay="200">
+                        <ul>
+                            <li>
+                                Contact
+                            </li>
+                            <li>
+                                <div class="flex">
+                                    <span>Email:</span>
+                                    <a href="mailto:info@bizfusion.ai">
+                                        info@bizfusion.ai
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex">
+                                    <span>Phone:</span>
+                                    <a href="tel:+1 469 416 5333">
+                                        +1 469 416 5333
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_social_links" data-aos="fade-up" data-aos-delay="300">
+                        <h1>Follow Us</h1>
+                        <div class="footer_link_main_area">
+                            <a href="#" aria-label="Instagram"><img src="../assets/images/instagram.svg"
+                                    alt="Instagram"></a>
+                            <a href="#" aria-label="Twitter"><img src="../assets/images/twitter.svg" alt="Twitter"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="../assets/images/linkedin.svg"
+                                    alt="LinkedIn"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer_description py-3">© 2024 Bizfusion. All rights reserved.</p>
+        <!-- footer end -->
+
+
+    </div>
+
+
+
+
+
+    <!-- ======Bootstrap JS====== -->
+    <!-- jquery js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- swipper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ======Animation Library====== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Simple Animation Initialization -->
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize AOS with simple settings
+            AOS.init({
+                duration: 800, // Animation duration
+                once: true, // Animation happens only once
+                offset: 100, // Offset (in px) from the original trigger point
+                delay: 0, // Delay values will be applied on elements via data-aos-delay
+                easing: 'ease-in-out', // Default easing for AOS animations
+                disable: function () {
+                    // Disable animations on mobile devices (optional)
+                    return window.innerWidth < 768;
+                }
+            });
+
+            // Refresh AOS after page loads (for dynamic content)
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    AOS.refresh();
+                }, 300);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
