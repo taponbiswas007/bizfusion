@@ -2352,7 +2352,7 @@ img[loading="lazy"].loaded {
     color: #ffffff;
     width: 56px;
     height: 56px;
-    background: linear-gradient(270deg, #DB4E35 0%, #00C8F5 100%);
+    background:#0994DC;
     display: flex;
     justify-content: center;
     align-items: center;
