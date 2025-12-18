@@ -2352,7 +2352,7 @@ img[loading="lazy"].loaded {
     color: #ffffff;
     width: 56px;
     height: 56px;
-    background:#0994DC;
+    background: #0994DC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2964,3 +2964,185 @@ img[loading="lazy"].loaded {
 }
 
 /* ==========careers area end======== */
+
+
+/* ==========many back grantee start========= */
+.refund-process-area {
+    background: #ffffff;
+}
+
+.refundProcess h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 49px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #2744A0;
+}
+
+.refundProcess h1 span {
+    color: #0994DC;
+}
+
+.refundProcess p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #0E1838;
+    margin: 20px 0;
+}
+
+.condition_box {
+    position: relative;
+    padding-left: 40px;
+    margin-left: 20px;
+    border-left: 1px dashed #0994DC;
+    padding-bottom: 30px;
+}
+
+.condition_SL {
+    position: absolute;
+    left: -20px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    background: #0994DC;
+    border-radius: 50%;
+}
+
+.condition_box:last-child {
+    border-left: none;
+    padding-bottom: 10px;
+}
+
+.condition_box h2 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #2744A0;
+}
+
+.condition_box p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #0E1838;
+}
+
+.what_we_coverd {
+    background: #E6F4FC;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+}
+
+.what_we_coverd h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 31px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #2744A0;
+    margin-bottom: 20px;
+}
+
+.what_we_coverd h1 span {
+    color: #0994DC;
+}
+
+.what_we_coverd ul {
+    padding: 0;
+    border-bottom: 1px solid #B3DEF4;
+    padding-bottom: 20px;
+}
+
+.what_we_coverd ul:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+.what_we_coverd ul li {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 15px;
+}
+
+.what_we_coverd ul li img {
+    height: 20px;
+    width: 20px;
+    margin-top: -9px;
+}
+
+.what_we_coverd ul li h2 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #2744A0;
+}
+
+.what_we_coverd ul li p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.what_we_coverd ul li span {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: block;
+    background: #000000;
+}
+
+.what_we_coverd ul li {
+    padding-left: 8px;
+}
+
+.what_we_coverd ul li:first-child {
+    padding-left: 0;
+}
+
+@media (max-width:540px) {
+    .refundProcess h1 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 440px) {
+    .service-header-area .service-header-text {
+        font-size: 23px;
+    }
+}
+
+/* ==========many back grantee end========= */
