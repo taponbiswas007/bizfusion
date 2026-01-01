@@ -3412,6 +3412,9 @@ img[loading="lazy"].loaded {
     max-width: 600px;
     margin: 0 auto;
 }
+.h64{
+    height: 64px;
+}
 
 @media (max-width: 768px) {
     .pricing-cards-wrapper {
